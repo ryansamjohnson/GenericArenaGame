@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98CA14AF-C04A-4499-BAA2-A49B45EF1F63}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfacesTest</RootNamespace>
+    <AssemblyName>InterfacesTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ItemClasses\MediumHealthPotion.cs" />
+    <Compile Include="ItemClasses\Item.cs" />
+    <Compile Include="ItemClasses\SmallHealthPotion.cs" />
+    <Compile Include="Weapons\Class1.cs" />
+    <Compile Include="Weapons\Hammer.cs" />
+    <Compile Include="Weapons\IronSword.cs" />
+    <Compile Include="Weapons\Poleaxe.cs" />
+    <Compile Include="Weapons\Weapon.cs" />
+    <Compile Include="EnemyClasses\CavalierEnemy.cs" />
+    <Compile Include="PlayerClasses\CavalierPlayer.cs" />
+    <Compile Include="Interfaces\Character.cs" />
+    <Compile Include="Interfaces\ICharacters.cs" />
+    <Compile Include="EnemyClasses\FighterEnemy.cs" />
+    <Compile Include="Interfaces\IItem.cs" />
+    <Compile Include="Weapons\IronAxe.cs" />
+    <Compile Include="Weapons\IronKatana.cs" />
+    <Compile Include="Weapons\IronLance.cs" />
+    <Compile Include="Interfaces\IWeapon.cs" />
+    <Compile Include="EnemyClasses\KnightEnemy.cs" />
+    <Compile Include="PlayerClasses\KnightPlayer.cs" />
+    <Compile Include="PlayerClasses\MyrmidonPlayer.cs" />
+    <Compile Include="EnemyClasses\MyrmidonEnemy.cs" />
+    <Compile Include="PlayerClasses\FighterPlayer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PlayerClasses\TacticianPlayer.cs" />
+    <Compile Include="EnemyClasses\TacticianEnemy.cs" />
+    <Compile Include="PlayerClasses\WeaponMasterPlayer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
